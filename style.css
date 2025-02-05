@@ -246,17 +246,28 @@ body {
 }
 
 @media (max-width: 376px) {
+  .section-p1 {
+    padding: 2rem;
+  }
+
   .hero {
     flex-direction: column;
+    align-items: center;
   }
-  .hero-content,
-  .hero-img {
+  .hero-content {
     width: 100%;
+    /* border: 1px solid green; */
+    margin-bottom: 1rem;
+  }
+
+  .hero-img {
+    max-width: 100%;
   }
 
   .hero-img img {
-    width: inherit;
+    width: 100%;
     object-fit: contain;
+    min-height: auto;
   }
 
   .hero-content h1 {
