@@ -138,6 +138,7 @@ body {
   color: #fff;
   font-family: "Work Sans", serif;
   margin-top: 1rem;
+  cursor: pointer;
 }
 
 .hero-details {
@@ -161,6 +162,7 @@ body {
 }
 
 .hero-img {
+  border: 1px solid blue;
   max-width: 50%;
   height: auto;
   display: flex;
@@ -286,5 +288,49 @@ body {
   .hero-layout h3,
   .hero-layout h4 {
     font-size: 1rem;
+  }
+
+  @media (max-width: 360px) {
+    .section-p1 {
+      padding: 2rem;
+    }
+
+    .hero {
+      flex-direction: column;
+      align-items: center;
+    }
+    .hero-content {
+      width: 100%;
+      /* border: 1px solid green; */
+      margin-bottom: 1rem;
+    }
+
+    .hero-img {
+      max-width: 100%;
+    }
+
+    .hero-img img {
+      width: 100%;
+      object-fit: contain;
+      min-height: auto;
+    }
+
+    .hero-content h1 {
+      font-size: 1.5rem;
+    }
+
+    .hero-content p {
+      font-size: 1rem;
+    }
+
+    .hero-content button {
+      width: 100%;
+      justify-content: center;
+    }
+
+    .hero-layout h3,
+    .hero-layout h4 {
+      font-size: 1rem;
+    }
   }
 }
